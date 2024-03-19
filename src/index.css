@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: rgb(233, 179, 19);
+}
+
+.unactive {
+  color: rgb(0, 0, 0);
+}
+.shadows {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(67, 71, 85, 0.27);
+  background-image: url(./assets/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.truncate-4-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.images {
+  transition: all 0.3s ease-in-out;
+}
+.navlink:hover .images {
+  transform: scale(1.2);
+}
